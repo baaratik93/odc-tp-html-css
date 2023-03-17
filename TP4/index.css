@@ -1,0 +1,51 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+body {
+    background-color: rgba(206, 211, 138, 0.616);
+}
+
+#header {
+    background-color: tomato;
+    margin: 5% 15%;
+    padding: 5%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h1,h2{
+    background-color: rgb(221, 158, 64);
+    border: 1px solid blue;
+    margin: 2px 30px;
+    padding: 2%;
+    color: blue;
+    font-size: x-large;
+    
+}
+section > h2 {
+    padding: 1%;
+    font-style: italic;
+    font-size: large;
+    border: none;
+
+}
+section {
+    text-align: center;
+    margin: 5px 0;
+    text-align: left;
+}
+pre {
+    margin: 0 5%;
+    line-height: 5px;
+}
+p{
+    padding: 1%;
+    margin: 1% 0%;
+}
+p::first-letter {
+    color:red;
+    font-weight: bolder;
+    font-size: 4vw;
+}

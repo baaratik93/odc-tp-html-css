@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+</head>
+<body>
+    <a href="../index.html">Accueil</a>
+<!-- Quelles sont les différents types de liste en HTML. 
+Créez une liste non ordonnée, une liste ordonnée et une liste de définition. 
+La profondeur des listes est au minimum de 2 et au maximum de 5. -->
+<h1>Les listes</h1>
+<p>
+    Il existe les listes ordonnées, les listes non-ordonnées et les listes de définitions
+</p>
+<p>
+    <h2>Les listes ordonnées</h2>
+    <p>
+        Les listes ordonnées en HTML sont créées en utilisant la balise ol. Voici un exemple de code HTML pour créer une liste ordonnée :
+    </p>
+    <img src="./1.png" alt="">
+    <p>
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </ol>
+    </p>
+    <p>
+    Dans cet exemple, la balise <strong><code>ol</code></strong> est utilisée pour encadrer les éléments de la liste ordonnée, et chaque élément de la liste est créé en utilisant la balise li. Le numéro d'ordre sera généré automatiquement par le navigateur web.
+    Il est également possible de spécifier un numéro de départ pour la liste en utilisant l'attribut start. Par exemple, si vous souhaitez commencer votre liste à partir de 5 plutôt que de 1, vous pouvez utiliser la syntaxe suivante :
+    </p>
+    <img src="./2.png"/>
+    <ol start="5">
+        <li>element1</li>
+        <li>element2</li>
+        <li>element3</li>
+    </ol>
+    <p>
+    Dans ce cas, les numéros de la liste commenceront à 5 au lieu de 1.
+    </p>
+    <h2>Les listes non-ordonnées</h2>
+    <p>
+    Les listes non ordonnées en HTML sont créées en utilisant l'élément <strong><code>ul</code></strong> (pour Unordered List).Voici un exemple de code HTML pour créer une liste non ordonnée :    
+    </p>
+    <img src="./3.png"/>
+    <p>
+        Cela créera une liste non ordonnée contenant trois éléments, chacun étant créé en utilisant l'élément <strong><code>li</code></strong> (pour List Item).
+
+            Le résultat affichera une liste comme ceci :
+            <ul>
+                <li>element1</li>
+                <li>element2</li>
+                <li>element3</li>
+            </ul>
+            Les éléments <strong><code>li</code></strong> sont affichés avec un point devant eux par défaut, mais cela peut être modifié en utilisant du CSS.
+    </p>
+    <h2>Les listes de définitions</h2>
+    <p>
+        Les listes de définitions en HTML sont créées en utilisant l'élément <strong><code>dl</code></strong> (pour Definition List).
+        Voici un exemple de code HTML pour créer une liste de définitions :
+    </p>
+    <img src="./4.png"/>
+    <p>
+        Cela créera une liste de définitions contenant trois termes et trois définitions, chacun étant créé en utilisant les éléments <strong><code>dt</code></strong> (pour Definition Term) et <strong><code>dd</code></strong> (pour Definition Description).
+        Le résultat affichera une liste comme ceci :
+    </p>
+    <p>
+        <dl>
+            <dt>Terme 1</dt>
+            <dd>Définition 1</dd>
+            <dt>Terme 2</dt>
+            <dd>Définition 2</dd>
+            <dt>Terme 3</dt>
+            <dd>Définition 3</dd>
+          </dl>
+    </p>
+</p>
+<h1>Création de liste</h1>
+<h1>Liste ordonnée de profondeur 5</h1>
+<pre>
+    <!-- ol*2{Niveau1}>ol>ol>ol>ol*3{Element$} -->
+    <!-- ol*2>ol>ol>ol>ol*3{Element$} -->
+   <ol>
+    <li>Niveau 1</li>
+    <li>Niveau 2</li>
+    <ol>
+        <li>Niveau 2</li>
+        <li>Niveau 2</li>
+        <ol>
+            <li>Niveau 3</li>
+            <li>Niveau 3</li>
+            <ol>
+                <li>Niveau 4</li>
+                <li>Niveau 4</li>
+                <ol>
+                    <li>Niveau 5</li>
+                    <li>Niveau 5</li>
+                </ol>
+            </ol>
+        </ol>
+    </ol>
+   </ol>
+</pre>
+<!-- pre>ul>li*2{Niveau1}+ul>li*2{Niveau2}+ul>li*2{Niveau3}+ul>li*2{Niveau4}+ul>li*2{Niveau4} -->
+<h1>Liste non-ordonnées de profondeur 5</h1>
+<pre>
+    <ul>
+        <li>Niveau 1</li>
+        <li>Niveau 1</li>
+        <ul>
+            <li>Niveau 2</li>
+            <li>Niveau 2</li>
+            <ul>
+                <li>Niveau 3</li>
+                <li>Niveau 3</li>
+                <ul>
+                    <li>Niveau 4</li>
+                    <li>Niveau 4</li>
+                    <ul>
+                        <li>Niveau 4</li>
+                        <li>Niveau 4</li>
+                    </ul>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</pre>
+</body>
+</html>

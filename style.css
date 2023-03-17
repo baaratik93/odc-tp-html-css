@@ -1,0 +1,25 @@
+.container {
+    background-image: url(goal.jpg);
+    background-size: contain;
+    background-repeat: round;
+    width: 90vw;
+    height: 70vh;
+    margin: auto;
+
+}
+.menu {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 5%;
+}
+.menu a {
+    text-decoration: none;
+    color: skyblue;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
