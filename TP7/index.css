@@ -11,16 +11,17 @@ body {
 
 .container {
     width: 90vw;
-    height: 100vh;
-    background-color: white;
+    height: auto;
     margin: auto;
-}
-
-.container header {
-    background-color: black;
-    width: 100%;
-    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
     position: relative;
+}
+.container main header {
+    background-color: black;
+    height: 25vh;
+    position: relative;
+    padding: 2rem;
 }
 
 .container header .hamburger{
@@ -42,15 +43,13 @@ body {
     width: 60vw;
     height: 95%;
     margin: auto;
-    /* background-color: gray; */
+    /* line-height: 3pt; */
     display: grid;
     justify-content: center;
-    /* align-content: space-around; */
-    /* align-items: center; */
 }
 
 .container header .navbar .logo {
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
     color: white;
     font-weight: bolder;
@@ -63,14 +62,16 @@ body {
     width: 100px;
     margin: auto;
     height: 35px;
-    padding: .5rem;
     background-color: violet;
     color:white;
     border-radius: 12px;
 }
 
 main {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: bisque;
 }
 
 main p {
@@ -79,4 +80,92 @@ main p {
 
 main ul {
     padding: 1rem;
+}
+
+.main {
+    padding: 2rem;
+}
+
+aside {
+    background-color: black;
+    padding: 2rem;
+    border-right: 4px solid rgb(39, 38, 38);
+    /* Activer alternativement cette propriété pour afficher ou desactiver le sidebar */
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    gap: 3rem;
+    /* justify-content: center; */
+}
+aside img{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+aside ul {
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+aside ul li {
+    font-size: 1.5rem;
+    line-height: 3;
+    border-top: 3px solid rgb(37, 37, 37);
+    letter-spacing: 5px;
+    background-color: rgb(20, 20, 20);
+    cursor:pointer;
+    margin-top: 3px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+aside ul li:hover {
+    background-color:rgb(66, 66, 66);
+    transition: 500ms all;
+    transform: scaleX(.98);
+    border-radius: 10px;
+}
+
+dialog {
+    position: absolute;
+    top: 15vh;
+    left: 13vw;
+    background-color: rgb(248, 248, 243);
+    border: none;
+    width: 40vw;
+    height: 500px;
+    /* border-radius: 15px; */
+    /* padding: 1rem; */
+    z-index: 1000;
+}
+
+dialog h2 {
+    background-color: rgb(65, 61, 61);
+    color: whitesmoke;
+    padding: 1rem;
+}
+dialog form {
+    padding: 6rem;
+    display: grid;
+    gap: 15px;
+}
+dialog form .field {
+    display: grid;
+    gap: 5px;
+}
+dialog form .field input {
+    height: 30px;
+    padding: 5px;
+}
+dialog form .field input[type="submit"]{
+    background-color:  violet;
+    padding: 3px;
+    margin-right: 8rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+dialog::backdrop{
+    background: black;
 }
