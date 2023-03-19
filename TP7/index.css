@@ -130,7 +130,7 @@ aside ul li:hover {
 dialog {
     position: absolute;
     top: 15vh;
-    left: 25vw;
+    left: 35vw;
     background-color: rgb(248, 248, 243);
     border: none;
     width: 40vw;
